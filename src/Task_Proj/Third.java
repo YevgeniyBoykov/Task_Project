@@ -18,7 +18,7 @@ class Third
     else return x % rand == 0;
   }
 
-  static void loop_3()
+  static void taskThird()
   {
     for (int i = 1; i < LIMIT_3; i++)
     {

@@ -9,7 +9,7 @@ class First
     return x/y;
   }
 
-  static void firstTask()
+  static void taskFirst()
   {
     System.out.print("Enter a: ");
     Scanner scan = new Scanner(System.in);
