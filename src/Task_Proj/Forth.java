@@ -6,9 +6,9 @@ class Forth
 
     private static void getWordWithMinLength(String s)
     {
-        //String[] str;
-        //str = baseString.split(" ");
-        for (String i : s.split(" "))
+
+        String str = s.replaceAll("[!:,]", "");
+        for (String i : str.split(" "))
         {
             System.out.println(i);
         }
