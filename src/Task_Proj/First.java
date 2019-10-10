@@ -29,5 +29,6 @@ class First
       System.out.println("Entering digits are too small... BUT: ");
     }
     System.out.println(division(a, b));
+    System.out.println();
   }
 }

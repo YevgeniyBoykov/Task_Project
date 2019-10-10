@@ -25,6 +25,7 @@ class Third
       if (division_rand(i))
       {
         System.out.println("Cycle completed! Step - " + i);
+        System.out.println();
         break;
       }
     }

@@ -1,22 +1,36 @@
 package Task_Proj;
 
+import java.util.ArrayList;
+
 class Forth
 {
-    private static final String baseString = "Get the latest BBC World News: international news, features and analysis from Africa!";
+    private static final String baseString = "Get the latest BC World News: international ne, features and analysis from Africa!";
 
-    private static void getWordWithMinLength(String s)
+    private static ArrayList<String> getWordWithMinLength(String s)
     {
-
         String str = s.replaceAll("[!:,]", "");
-        for (String i : str.split(" "))
+        String[] miniStr = str.split(" ");
+        ArrayList<String> resultString  = new ArrayList<String>();
+        resultString.add(miniStr[0]);
+
+        for (int i = 1; i < miniStr.length; i++)
         {
-            System.out.println(i);
+           if(miniStr[i].length() <= resultString.get(0).length())
+           {
+               if(miniStr[i].length() < resultString.get(0).length())
+               {
+                   resultString.clear();
+                   resultString.add(miniStr[i]);
+               }
+               else
+                   resultString.add(miniStr[i]);
+           }
         }
-      //  return s;
+        return resultString;
     }
 
     static void taskForth()
     {
-        getWordWithMinLength(baseString);
+        System.out.println(getWordWithMinLength(baseString));
     }
 }
