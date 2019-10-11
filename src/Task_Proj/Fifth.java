@@ -2,7 +2,7 @@ package Task_Proj;
 
 public class Fifth
 {
-    private static final String baseString1 = "test1 test2 test3";
+    private static final String baseString1 = "test1 test2  test3";
     private static final String baseString2 = "Get the latest BC World News: international ne, features and analysis from Africa!";
 
     private static String[] changeWordsOrder(String s)

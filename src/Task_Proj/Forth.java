@@ -9,7 +9,7 @@ class Forth
     private static ArrayList<String> getWordWithMinLength(String s)
     {
         String str = s.replaceAll("[!:,]", "");
-        String[] miniStr = str.split(" ");
+        String[] miniStr = str.split("\\s+");
         ArrayList<String> resultString  = new ArrayList<String>();
         resultString.add(miniStr[0]);
 
